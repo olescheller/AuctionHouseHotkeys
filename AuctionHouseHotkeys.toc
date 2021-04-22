@@ -1,0 +1,7 @@
+## Interface: 90005
+## Title: AuctionHouseHotkeys
+## Notes: Adds a hotkey in the 'Other' hotkey section for the creation of an auction.
+## Author: scholle
+## Version: 1.0
+
+AuctionHouseHotkeys.lua

@@ -1,0 +1,8 @@
+<Bindings>
+    <Binding name="SELLACTIVEAUCTIONITEM" header="AUCTIONHOUSEHOTKEYS">
+        if keystate == "down" then
+            AuctionHouseFrame.ItemSellFrame:PostItem()
+            AuctionHouseFrame.CommoditiesSellFrame:PostItem()
+       end
+    </Binding>
+</Bindings>
