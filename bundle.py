@@ -8,7 +8,7 @@ def main():
     src_dir = "src"
     target_dir = "target"
     target_src = os.path.join(target_dir, addon_name)
-    zip_file = os.path.join(target_dir,addon_name)
+    zip_file = os.path.join(target_dir, addon_name)
 
     # remove all prior build artifacts
     shutil.rmtree(target_dir, ignore_errors=True)
