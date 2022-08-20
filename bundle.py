@@ -4,7 +4,7 @@ import shutil
 
 
 def main():
-    addon_name = "AuctionHouseHotkeys"
+    addon_name = os.path.basename(os.path.abspath('.'))
     src_dir = "src"
     target_dir = "target"
     target_src = os.path.join(target_dir, addon_name)
