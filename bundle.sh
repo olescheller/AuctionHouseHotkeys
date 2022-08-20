@@ -1,7 +1,15 @@
 AddonName=AuctionHouseHotkeys
-mkdir ${AddonName}
-cp ${AddonName}.lua ${AddonName}/
-cp ${AddonName}.toc ${AddonName}/
-cp Bindings.xml ${AddonName}/
-mkdir out > /dev/null 2>&1
-tar -a -c -f out/${AddonName}.zip ${AddonName}/
+srcDir=src
+targetDir=target
+targetSrc=${targetDir}/${AddonName}
+zipFile=${AddonName}.zip
+
+rm -rf ${targetDir}
+mkdir -p ${targetSrc}
+cp -R ${srcDir}/. ${targetSrc}
+cd ${targetDir}
+tar -c -f ${zipFile} ${AddonName}
+cd ..
+
+# dev deploy into addon folder
+cp -R ${srcDir}/. .
